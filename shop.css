@@ -9,9 +9,11 @@ html,
 body {
     width: 100%;
     height: 100%;
-    background-color: rgb(214, 214, 214);
+    background-color: #FFFFFF;
 }
 
+
+/* header CSS */
 header .navbar {
     display: flex;
     justify-content: space-between;
@@ -23,11 +25,29 @@ header .navbar {
     top: 0;
     width: 100%;
     height: 60px;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .logo img {
     width: 50px;
     height: 50px;
+}
+
+.logo a h1 {
+    font-size: 28px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.logo a {
+    color: black;
+    text-decoration: none;
 }
 
 .menu ul {
@@ -44,8 +64,12 @@ header .navbar {
 
 .menu li:hover {
     color: #8D5858;
-    transition: all 0.25s ease-in;
+    transition: all 1ms linear;
+}
 
+.menu ul a {
+    color: black;
+    text-decoration: none;
 }
 
 div>.icons {
@@ -59,4 +83,265 @@ div>.icons {
     padding: 0 12px;
     margin: 0 8px;
     cursor: pointer;
+}
+
+
+/* shop CSS */
+.shop {
+    height: 350px;
+    background: url(ImageShopPage/Rectangle\ 1.png) no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.interior_shop img {
+    width: 130px;
+}
+
+.interior_shop h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+/* heading CSS */
+#heading {
+    height: 120px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* main CSS */
+.shop_container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 50px;
+}
+
+.row1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0px;
+}
+
+.image {
+    width: 250px;
+    height: 260px;
+}
+
+.image img {
+    width: 250px;
+}
+
+.info {
+    background-color: #F4F5F7;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.info h1 {
+    font-size: 30px;
+    color: #3A3A3A;
+}
+
+.info p {
+    font-size: 15px;
+    color: #898989;
+}
+
+.rate {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rate h5 {
+    font-size: 13px;
+    color: #3A3A3A;
+}
+
+.rate h6 {
+    font-size: 12px;
+    text-decoration: line-through;
+    color: #B0B0B0;
+}
+
+.discount {
+    background-color: #E97171;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+}
+
+.discount p {
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.new {
+    background-color: #2EC1AC;
+}
+
+.pages {
+    width: 25%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.page {
+    width: 40px;
+    height: 40px;
+    background-color: #B88E2F;
+    color: white;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.page2 {
+    width: 40px;
+    height: 40px;
+    background-color: #F9F1E7;
+    color: black;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+
+/* footer CSS */
+footer {
+    margin-top: 50px;
+    border-top: 1px solid #D8D8D8;
+    display: flex;
+    align-items: baseline;
+}
+
+.about {
+    padding: 40px;
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.about_logo {
+    display: flex;
+    align-items: center;
+}
+
+.about_logo img {
+    width: 60px;
+}
+
+.about p {
+    width: 70%;
+    color: #616161;
+}
+
+.location {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.location img {
+    width: 30px;
+}
+
+.location p {
+    width: 80%;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.website {
+    font-size: 20px;
+    font-weight: 800;
+    color: #616161;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 15%;
+    row-gap: 15px;
+}
+
+.menu h1 {
+    width: 100%;
+}
+
+.gap {
+    display: flex;
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: #616161;
+}
+
+.m-right {
+    margin-left: 50px;
+    width: 23%;
+}
+
+.email {
+    display: flex;
+    width: 100%;
+}
+
+.email input {
+    width: 80%;
+    padding: 5px;
+    font-size: 15px;
+    background-color: #F4F5F7;
+    border: none;
+}
+
+.email_image {
+    background-color: #E89F71;
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.email_image img {
+    height: 25px;
 }
