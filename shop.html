@@ -5,42 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop - FOMO</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="shop.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="#"><img src="ImageShopPage/IMG-20241010-WA0046.jpg" alt=""></a>
-                <a href="#">
-                    <h1>INTERIOR</h1>
-                </a>
-            </div>
-            <div class="menu">
-                <ul>
-                    <a href="#">
-                        <li>Home</li>
-                    </a>
-                    <a href="shop.html">
-                        <li>Shop</li>
-                    </a>
-                    <a href="blog.html">
-                        <li>Blog</li>
-                    </a>
-                    <a href="#">
-                        <li>Contact</li>
-                    </a>
-                </ul>
-            </div>
-            <div class="icons">
-                <a href="#"><img src="ImageShopPage/IMG-20241010-WA0047.jpg" alt=""></a>
-                <a href="#"><img src="ImageShopPage/IMG-20241010-WA0048.jpg" alt=""></a>
-                <a href="#"><img src="ImageShopPage/IMG-20241010-WA0049.jpg" alt=""></a>
-                <a href="#"><img src="ImageShopPage/IMG-20241010-WA0050.jpg" alt=""></a>
-            </div>
-        </nav>
-    </header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"><img src="ImageShopPage/IMG-20241010-WA0046.jpg" alt=""></a>
+            <a href="#">
+                <h1>INTERIOR</h1>
+            </a>
+        </div>
+        <ul class="nav" id="mynav">
+            <a href="#">
+                <li>Home</li>
+            </a>
+            <a href="shop.html">
+                <li>Shop</li>
+            </a>
+            <a href="blog.html">
+                <li>Blog</li>
+            </a>
+            <a href="#">
+                <li>Contact</li>
+            </a>
+        </ul>
+        <div class="icons">
+            <a href="#"><img src="ImageShopPage/IMG-20241010-WA0047.jpg" alt=""></a>
+            <a href="#"><img src="ImageShopPage/IMG-20241010-WA0048.jpg" alt=""></a>
+            <a href="#"><img src="ImageShopPage/IMG-20241010-WA0049.jpg" alt=""></a>
+            <a href="#"><img src="ImageShopPage/IMG-20241010-WA0050.jpg" alt=""></a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="ri-menu-line"></i>
+        </a>
+    </nav>
 
     <div class="shop">
         <div class="interior_shop">
@@ -330,6 +330,15 @@
             <a href="">Facebook</a>
             <a href="">Instagram</a>
             <a href="">Twitter</a>
+            <div class="menu m-down">
+                <h1>Stay Updated</h1>
+                <div class="email">
+                    <input type="text" placeholder="Enter your email">
+                    <div class="email_image">
+                        <img src="ImageShopPage/Vector.png" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="menu m-right">
@@ -342,6 +351,9 @@
             </div>
         </div>
     </footer>
+
+
+    <script src="shop.js"></script>
 </body>
 
 </html>
