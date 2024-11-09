@@ -550,15 +550,25 @@ footer {
     .logo a h1 {
         font-size: 1.4em;
     }
+
+    .icons img {
+        height: 1em;
+    }
 }
 
 @media screen and (max-width: 450px) {
     .navbar {
-        padding: 0;
-        scale: 0.9;
+        padding: 0.625em;
+        /* scale: 0.9; */
     }
 
     .icons img {
         padding: 0 0.5em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .menu a {
+        font-size: 0.8em;
     }
 }
