@@ -1,4 +1,4 @@
-const images = ["https://vashujain2024.github.io/MiniProject_2ndYear/ImageSingleProductPage/image2.png", "https://vashujain2024.github.io/MiniProject_2ndYear/ImageSingleProductPage/image2.png", "https://vashujain2024.github.io/MiniProject_2ndYear/ImageSingleProductPage/image2.png", "https://vashujain2024.github.io/MiniProject_2ndYear/ImageSingleProductPage/image2.png", "https://vashujain2024.github.io/MiniProject_2ndYear/ImageSingleProductPage/image2.png"];
+const images = ["https://vashujain2024.github.io/MiniProject_2ndYear/ImageSingleProductPage/image1.png", "https://vashujain2024.github.io/MiniProject_2ndYear/ImageSingleProductPage/image2.png", "https://vashujain2024.github.io/MiniProject_2ndYear/ImageSingleProductPage/image3.png", "https://vashujain2024.github.io/MiniProject_2ndYear/ImageSingleProductPage/image4.png", "https://vashujain2024.github.io/MiniProject_2ndYear/ImageSingleProductPage/image5.png"];
 
 let swapImage = document.getElementById("swapImage");
 let mainImage = document.getElementById("mainImage");
