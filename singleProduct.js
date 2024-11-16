@@ -26,14 +26,24 @@ function openRealifyApp() {
     const appURL = "realify://open";
 
     // App store URL (for Android or iOS)
-    const appStoreURL = "https://play.google.com/store/apps/details?id=com.example.app"; // Replace with your app's URL
+    const apkUrl = "https://drive.google.com/uc?export=download&id=11kvi6e1NmsQYKqnS_y7yomzSP7wF9nD7"; // Replace with your app's URL
 
     // Try to open the app
     const timeout = setTimeout(() => {
         // If the app doesn't open, ask the user to install it
         const userWantsToInstall = confirm("The app is not installed. Would you like to install it?");
         if (userWantsToInstall) {
-            window.location.href = appStoreURL; // Redirect to app store
+
+            const link = document.createElement('a');
+            link.href = apkUrl;
+            link.download = 'Realify.apk'; // Optional: specify the default download filename
+            link.click(); // Automatically trigger the download
+
+            // Open the app after download starts
+            // Replace the following line with your app's custom URL scheme to launch the app
+            setTimeout(function () {
+                window.location.href = appURL; // Custom URL scheme of your app (you must define this in the app)
+            }, 2000); // Give time for the download to start
         } else {
             alert("Redirecting back to the website.");
         }
