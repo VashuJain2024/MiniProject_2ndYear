@@ -27,28 +27,28 @@ function openRealifyApp() {
 }
 
 
-function startCamera() {
-    // Check if the browser supports getUserMedia
-    // const blocks = document.getElementById("blocks");
-    // blocks.style.height = '-webkit-fill-available';
+// function startCamera() {
+//     // Check if the browser supports getUserMedia
+//     // const blocks = document.getElementById("blocks");
+//     // blocks.style.height = '-webkit-fill-available';
 
-    const video = document.getElementById('video');
-    video.style.display = 'block';
+//     const video = document.getElementById('video');
+//     video.style.display = 'block';
 
-    if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-        // Request access to the camera
-        navigator.mediaDevices.getUserMedia({ video: true })
-            .then(function (stream) {
-                // Set the video source to the camera stream
-                document.getElementById('video').srcObject = stream;
-            })
-            .catch(function (error) {
-                console.log("Error accessing camera: ", error);
-            });
-    } else {
-        alert("Camera not supported in this browser.");
-    }
-}
+//     if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+//         // Request access to the camera
+//         navigator.mediaDevices.getUserMedia({ video: true })
+//             .then(function (stream) {
+//                 // Set the video source to the camera stream
+//                 document.getElementById('video').srcObject = stream;
+//             })
+//             .catch(function (error) {
+//                 console.log("Error accessing camera: ", error);
+//             });
+//     } else {
+//         alert("Camera not supported in this browser.");
+//     }
+// }
 
 // document.getElementById('loadAR').addEventListener('click', function () {
 //     const arViewer = document.getElementById('arViewer');
