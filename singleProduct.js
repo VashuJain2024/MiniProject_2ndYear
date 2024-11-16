@@ -1,4 +1,4 @@
-const images = ["http://127.0.0.1:5500/MiniProject/ImageSingleProductPage/image1.png", "http://127.0.0.1:5500/MiniProject/ImageSingleProductPage/image2.png", "http://127.0.0.1:5500/MiniProject/ImageSingleProductPage/image3.png", "http://127.0.0.1:5500/MiniProject/ImageSingleProductPage/image4.png", "http://127.0.0.1:5500/MiniProject/ImageSingleProductPage/image5.png"];
+const images = ["https://github.com/VashuJain2024/MiniProject_2ndYear/blob/main/ImageSingleProductPage/image1.png", "https://github.com/VashuJain2024/MiniProject_2ndYear/blob/main/ImageSingleProductPage/image2.png", "https://github.com/VashuJain2024/MiniProject_2ndYear/blob/main/ImageSingleProductPage/image3.png", "https://github.com/VashuJain2024/MiniProject_2ndYear/blob/main/ImageSingleProductPage/image4.png", "https://github.com/VashuJain2024/MiniProject_2ndYear/blob/main/ImageSingleProductPage/image5.png"];
 
 let swapImage = document.getElementById("swapImage");
 let mainImage = document.getElementById("mainImage");
