@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="singleProduct.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="single-product">
+        <div id="blocks">
+            <div class="left-block">
+                <div class="all-images">
+                    <div class="image">
+                        <img src="ImageSingleProductPage/image2.png" alt="" onclick="swapimage()" id="swapImage">
+                    </div>
+                    <div class="image">
+                        <img src="ImageSingleProductPage/image3.png" alt="" onclick="swapimage()" id="swapImage">
+                    </div>
+                    <div class="image">
+                        <img src="ImageSingleProductPage/image4.png" alt="" onclick="swapimage()" id="swapImage">
+                    </div>
+                    <div class="image">
+                        <img src="ImageSingleProductPage/image5.png" alt="" onclick="swapimage()" id="swapImage">
+                    </div>
+                </div>
+                <div class="main-image">
+                    <img src="ImageSingleProductPage/image1.png" alt="" id="mainImage">
+                </div>
+            </div>
+            <div class="right-block">
+                <div class="details">
+                    <h1>Asgaard sofa</h1>
+                    <p>Rs. 250,000.00</p>
+                    <div class="rating">
+                        <div class="stars">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-half-line"></i>
+                        </div>
+                        <div class="customerRating">
+                            5 Customer Review
+                        </div>
+                    </div>
+                    <p>Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact,
+                        stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs
+                        for a sound.
+                    </p>
+                </div>
+                <div class="extraDetails">
+                    <div class="sizeColorAR">
+                        <div class="sizeColor">
+                            <div class="size">
+                                <h6>Size</h6>
+                                <div class="allSize">
+                                    <div class="sizebox">L</div>
+                                    <div class="sizebox">XL</div>
+                                    <div class="sizebox">XS</div>
+                                </div>
+                            </div>
+                            <div class="color">
+                                <h6>Color</h6>
+                                <div class="allColor">
+                                    <div class="colorbox"></div>
+                                    <div class="colorbox"></div>
+                                    <div class="colorbox"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="AR">
+                            <button onclick="startCamera()">
+                                <div class="arIcon">
+                                    <div class="arIcon"><i class="ri-box-3-fill"></i></div>
+                                </div>See it in AR
+                            </button>
+                        </div>
+                    </div>
+                    <div class="addAndCompare">
+                        <div class="plusminus">
+                            <p>-</p>
+                            <p>1</p>
+                            <p>+</p>
+                        </div>
+                        <div class="addtocart">
+                            <p>Add To Cart</p>
+                        </div>
+                        <div class="compare">
+                            <p>+</p>
+                            <p>Compare</p>
+                        </div>
+                    </div>
+                    <div class="information">
+                        <p><span>SKU</span> : SS001</p>
+                        <p><span>Category</span> : Sofas</p>
+                        <p><span>Tags</span> : Sofa, Chair, Home, Shop</p>
+                        <p><span>Share</span> : <i class="ri-facebook-circle-fill"></i><i
+                                class="ri-linkedin-box-fill"></i><i class="ri-twitter-fill"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <video id="video" width="100%" height="auto" autoplay></video>
+    </div>
+
+    <script src="singleProduct.js"></script>
+</body>
+
+</html>

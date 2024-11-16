@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="shop.css">
 </head>
 
-<body>
+<body id="background">
     <nav class="navbar">
         <div class="logo">
             <a href="#"><img src="ImageShopPage/IMG-20241010-WA0046.jpg" alt=""></a>
@@ -54,7 +54,7 @@
     <main>
         <div class="shop_container">
             <div class="row1">
-                <div class="item">
+                <div class="item" id="trigger">
                     <div class="image"><img src="ImageShopPage/image 1.png" alt=""></div>
                     <div class="info">
                         <h1>Syltherine</h1>
@@ -67,6 +67,10 @@
                     <div class="discount">
                         <p>-30%</p>
                     </div>
+                </div>
+                <div id="popup" class="popup-container">
+                    <button id="close-popup" class="close-button">X</button>
+                    <iframe id="popup-frame" src="" frameborder="0"></iframe>
                 </div>
                 <div class="item">
                     <div class="image"><img src="ImageShopPage/image 1.png" alt=""></div>
