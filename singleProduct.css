@@ -197,6 +197,7 @@ body {
     width: 100%;
     display: grid;
     place-items: center;
+    cursor: pointer;
 }
 
 .AR button {
@@ -209,6 +210,7 @@ body {
     justify-content: center;
     align-items: center;
     scale: 0.8;
+    cursor: pointer;
 }
 
 .arIcon {
@@ -217,6 +219,7 @@ body {
     width: 35px;
     height: 35px;
     object-fit: cover;
+    cursor: pointer;
 }
 
 /* Styling for top-left corner */
