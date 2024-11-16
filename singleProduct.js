@@ -19,11 +19,6 @@ function swapimage() {
 function openRealifyApp() {
     // Attempt to open the app using the custom URL scheme
     window.location.href = "realify://open";
-
-    // Optional fallback for devices without the app
-    setTimeout(() => {
-        alert("Realify app is not installed on your device.");
-    }, 2000); // Wait for 2 seconds before showing the fallback
 }
 
 
