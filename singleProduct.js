@@ -6,6 +6,8 @@ let mainImage = document.getElementById("mainImage");
 function swapimage() {
     let index = images.indexOf(mainImage.src); // Get image file name from src
     console.log(mainImage.src);
+    console.log(index);
+    console.log(images[index]);
     if (index !== -1) {
         index = (index + 1) % images.length;
         mainImage.src = images[index];
