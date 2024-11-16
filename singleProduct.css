@@ -368,7 +368,6 @@ body {
 
     #blocks {
         flex-direction: column;
-        height: auto;
     }
 
     .left-block {
