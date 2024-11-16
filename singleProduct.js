@@ -16,10 +16,36 @@ function swapimage() {
     }
 }
 
+// function openRealifyApp() {
+//     // Attempt to open the app using the custom URL scheme
+//     window.location.href = "realify://open";
+// }
+
 function openRealifyApp() {
-    // Attempt to open the app using the custom URL scheme
-    window.location.href = "realify://open";
+    // URL scheme of the app (replace with your app's custom scheme)
+    const appURL = "realify://open";
+
+    // App store URL (for Android or iOS)
+    const appStoreURL = "https://play.google.com/store/apps/details?id=com.example.app"; // Replace with your app's URL
+
+    // Try to open the app
+    const timeout = setTimeout(() => {
+        // If the app doesn't open, ask the user to install it
+        const userWantsToInstall = confirm("The app is not installed. Would you like to install it?");
+        if (userWantsToInstall) {
+            window.location.href = appStoreURL; // Redirect to app store
+        } else {
+            alert("Redirecting back to the website.");
+        }
+    }, 1500); // Wait 1.5 seconds to detect if the app is not installed
+
+    // Try to open the app
+    window.location.href = appURL;
+
+    // Clear timeout if the app opens successfully
+    window.addEventListener("blur", () => clearTimeout(timeout));
 }
+
 
 
 // function startCamera() {
