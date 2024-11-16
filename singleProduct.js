@@ -1,10 +1,11 @@
-const images = ["https://github.com/VashuJain2024/MiniProject_2ndYear/blob/main/ImageSingleProductPage/image1.png", "https://github.com/VashuJain2024/MiniProject_2ndYear/blob/main/ImageSingleProductPage/image2.png", "https://github.com/VashuJain2024/MiniProject_2ndYear/blob/main/ImageSingleProductPage/image3.png", "https://github.com/VashuJain2024/MiniProject_2ndYear/blob/main/ImageSingleProductPage/image4.png", "https://github.com/VashuJain2024/MiniProject_2ndYear/blob/main/ImageSingleProductPage/image5.png"];
+const images = ["ImageSingleProductPage/image1.png", "ImageSingleProductPage/image2.png", "ImageSingleProductPage/image3.png", "ImageSingleProductPage/image4.png", "ImageSingleProductPage/image5.png"];
 
 let swapImage = document.getElementById("swapImage");
 let mainImage = document.getElementById("mainImage");
 
 function swapimage() {
     let index = images.indexOf(mainImage.src); // Get image file name from src
+    console.log(mainImage.src);
     if (index !== -1) {
         index = (index + 1) % images.length;
         mainImage.src = images[index];
