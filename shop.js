@@ -1,5 +1,6 @@
+var x = document.getElementById("mynav");
+
 function myFunction() {
-    var x = document.getElementById("mynav");
     if (x.className === "nav") {
         x.className = "menuClick";
         x.style.display = "block;"
@@ -7,6 +8,20 @@ function myFunction() {
         x.className = "nav";
     }
 }
+
+let lastScrollY = window.scrollY;
+window.addEventListener("scroll", () => {
+    console.log("Current Scroll Position:", window.scrollY);
+    console.log("Last Scroll Position:", lastScrollY);
+    if (window.scrollY > lastScrollY) {
+        x.className = "nav";
+    }
+    lastScrollY = window.scrollY;
+});
+
+window.addEventListener("scroll", () => {
+    console.log("Scroll Y Position:", window.scrollY);
+});
 
 const trigger = document.getElementById('trigger');
 const popup = document.getElementById('popup');

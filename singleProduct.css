@@ -308,7 +308,7 @@ body {
 }
 
 .addtocart p {
-    font-size: 16px;
+    font-size: 85%;
 }
 
 .compare {
@@ -323,7 +323,7 @@ body {
 }
 
 .compare p {
-    font-size: 16px;
+    font-size: 85%;
 }
 
 .information {
@@ -356,7 +356,7 @@ body {
     border-radius: 10px;
 }
 
-@media screen and (min-width: 300px) and (max-width: 624px) {
+@media screen and (max-width: 624px) {
     .single-product {
         overflow-y: scroll;
         overflow-x: hidden;
