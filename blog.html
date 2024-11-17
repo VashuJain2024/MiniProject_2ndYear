@@ -4,76 +4,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - FOMO</title>
+    <title>Blog - REALIFY</title>
+    <!-- <link rel="stylesheet" href="shop.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="blog.css">
 </head>
 
 <body>
-    <!-- <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="#"><img src="ImageShopPage/IMG-20241010-WA0046.jpg" alt=""></a>
-                <a href="#">
-                    <h1>INTERIOR</h1>
-                </a>
-            </div>
-            <div class="menu">
-                <ul>
-                    <a href="#">
-                        <li>Home</li>
-                    </a>
-                    <a href="shop.html">
-                        <li>Shop</li>
-                    </a>
-                    <a href="blog.html">
-                        <li>Blog</li>
-                    </a>
-                    <a href="#">
-                        <li>Contact</li>
-                    </a>
-                </ul>
-            </div>
-            <div class="icons">
-                <a href="#"><img src="ImageShopPage/IMG-20241010-WA0047.jpg" alt=""></a>
-                <a href="#"><img src="ImageShopPage/IMG-20241010-WA0048.jpg" alt=""></a>
-                <a href="#"><img src="ImageShopPage/IMG-20241010-WA0049.jpg" alt=""></a>
-                <a href="#"><img src="ImageShopPage/IMG-20241010-WA0050.jpg" alt=""></a>
-            </div>
-        </nav>
-    </header> -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"><img src="ImageShopPage/IMG-20241010-WA0046.jpg" alt=""></a>
+            <a href="#">
+                <h1>REALIFY</h1>
+            </a>
+        </div>
+        <ul class="nav" id="mynav">
+            <a href="#">
+                <li>Home</li>
+            </a>
+            <a href="shop.html">
+                <li>Shop</li>
+            </a>
+            <a href="blog.html">
+                <li>Blog</li>
+            </a>
+            <a href="contact.html">
+                <li>Contact</li>
+            </a>
+        </ul>
+        <div class="icons">
+            <a href="#"><img src="ImageShopPage/IMG-20241010-WA0047.jpg" alt=""></a>
+            <a href="#"><img src="ImageShopPage/IMG-20241010-WA0048.jpg" alt=""></a>
+            <a href="#"><img src="ImageShopPage/IMG-20241010-WA0049.jpg" alt=""></a>
+            <a href="#"><img src="ImageShopPage/IMG-20241010-WA0050.jpg" alt=""></a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="ri-menu-line"></i>
+        </a>
+    </nav>
 
-    <!-- <div class="shop">
+    <div class="shop">
         <div class="interior_shop">
             <img src="ImageShopPage/fomo-removebg-preview 2.png" alt="">
             <h1>Blog</h1>
         </div>
-    </div> -->
+    </div>
 
     <main>
-        <div class="blogs">
-            <div class="blog">
-                <div class="blogImg"><img src="ImageBlogPage/Rectangle 68.png" alt=""></div>
-                <div class="det">
-                    Hiiiiii
+        <div class="blog-card">
+            <div class="blog-image">
+                <img src="https://via.placeholder.com/800x400" alt="Blog Image">
+            </div>
+            <div class="blog-info">
+                <div class="blog-meta">
+                    <span>👤 Admin</span>
+                    <span>📅 14 Oct 2022</span>
+                    <span>📂 Wood</span>
                 </div>
-                <h3>Going all-in with millennial design</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere
-                    sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero
-                    enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis
-                    nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et
-                    ultrices neque ornare aenean euismod elementum.</p>
-                <h2>Read More</h2>
+                <h2 class="blog-title">Going all-in with millennial design</h2>
+                <p class="blog-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua...
+                </p>
+                <a href="#" class="read-more">Read more</a>
             </div>
         </div>
-        <div class="recentPosts">sdf</div>
+        <div class="blog-card">
+            <div class="blog-image">
+                <img src="https://via.placeholder.com/800x400" alt="Blog Image">
+            </div>
+            <div class="blog-info">
+                <div class="blog-meta">
+                    <span>👤 Admin</span>
+                    <span>📅 14 Oct 2022</span>
+                    <span>📂 Wood</span>
+                </div>
+                <h2 class="blog-title">Going all-in with millennial design</h2>
+                <p class="blog-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua...
+                </p>
+                <a href="#" class="read-more">Read more</a>
+            </div>
+        </div>
+        <div class="blog-card">
+            <div class="blog-image">
+                <img src="https://via.placeholder.com/800x400" alt="Blog Image">
+            </div>
+            <div class="blog-info">
+                <div class="blog-meta">
+                    <span>👤 Admin</span>
+                    <span>📅 14 Oct 2022</span>
+                    <span>📂 Wood</span>
+                </div>
+                <h2 class="blog-title">Going all-in with millennial design</h2>
+                <p class="blog-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua...
+                </p>
+                <a href="#" class="read-more">Read more</a>
+            </div>
+        </div>
     </main>
 
-    <!-- <footer>
+    <footer>
         <div class="about">
             <div class="about_logo">
                 <img src="ImageShopPage/fomo-removebg-preview 2.png" alt="">
-                <h1>FOMO</h1>
+                <h1>REALIFY</h1>
             </div>
             <p>Worldwide furniture store since 2020. We sell over 1000+ branded products on our website</p>
             <div class="location">
@@ -84,7 +122,7 @@
                 <img src="ImageShopPage/Phone 24px.png" alt="">
                 <p>+ 9897XXXXXX</p>
             </div>
-            <div class="website">www.fomo.com</div>
+            <div class="website">www.realify.com</div>
         </div>
 
         <div class="menu">
@@ -120,7 +158,10 @@
                 </div>
             </div>
         </div>
-    </footer> -->
+    </footer>
+
+
+    <script src="shop.js"></script>
 </body>
 
 </html>
