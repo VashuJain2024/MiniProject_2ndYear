@@ -52,10 +52,6 @@
     </div>
 
     <main>
-        <div class="riddhi">
-            <img src="Rectangle 1.png" alt="">
-            <img src="fomo-removebg-preview 2.png" alt="" class="riddhio">
-        </div>
         <section>
             <h2>Get In Touch With Us</h2>
             <p>For more information about our products & services, please feel free to drop us an email. Our staff is
@@ -83,20 +79,19 @@
 
                 <!-- Contact Form Column -->
                 <div class="contact-form">
-                    <form action="#" id="submit">
+                    <form action="#" method="post" id="submit">
+                        <!-- Correctly using both id and name -->
                         <label for="name">Your Name <span>*</span></label>
-                        <input type="text" id="name" name="name" placeholder="Your name" required>
-
+                        <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name">
                         <label for="email">Email Address <span>*</span></label>
-                        <input type="email" id="email" name="email" placeholder="Email address" required>
-
+                        <input type="email" id="email" name="email" placeholder="Email address" required
+                            autocomplete="email">
                         <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" placeholder="This is optional">
-
+                        <input type="text" id="subject" name="subject" placeholder="This is optional" autocomplete="on">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="Hi! I'd like to ask about..."></textarea>
-
-                        <button type="submit" id="submit">Submit</button>
+                        <textarea id="message" name="message" placeholder="Hi! I'd like to ask about..."
+                            autocomplete="off"></textarea>
+                        <button type="submit">Submit</button>
                     </form>
                 </div>
             </div>
@@ -146,7 +141,7 @@
             <div class="menu m-down">
                 <h1>Stay Updated</h1>
                 <div class="email">
-                    <input type="text" placeholder="Enter your email">
+                    <input type="text" placeholder="Enter your email" id="email" name="email" autocomplete="email">
                     <div class="email_image">
                         <img src="ImageShopPage/Vector.png" alt="">
                     </div>
@@ -157,7 +152,7 @@
         <div class="menu m-right">
             <h1>Stay Updated</h1>
             <div class="email">
-                <input type="text" placeholder="Enter your email">
+                <input type="text" placeholder="Enter your email" id="Email" name="Email" autocomplete="email">
                 <div class="email_image">
                     <img src="ImageShopPage/Vector.png" alt="">
                 </div>
@@ -166,7 +161,6 @@
     </footer>
 
 
-    <script src="shop.js"></script>
     <script src="contact.js"></script>
 </body>
 

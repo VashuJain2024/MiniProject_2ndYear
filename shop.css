@@ -13,6 +13,10 @@ body {
     overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 /* Popup container */
 .popup-container {
     display: none;
@@ -650,4 +654,36 @@ footer {
     .menu a {
         font-size: 0.8em;
     }
+}
+
+
+#search-container {
+    display: none;
+    position: absolute;
+    align-items: center;
+    gap: 5px;
+    top: 50px;
+}
+
+#search-container.active {
+    display: flex;
+}
+
+.search-input {
+    padding: 4px;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid rgb(36 36 36);
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.search-button {
+    background-color: #E89F71;
+    color: black;
+    font-weight: 500;
+    padding: 4px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
 }

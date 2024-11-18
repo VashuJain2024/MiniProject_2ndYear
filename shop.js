@@ -1,5 +1,4 @@
 var x = document.getElementById("mynav");
-
 function myFunction() {
     if (x.className === "nav") {
         x.className = "menuClick";
@@ -11,16 +10,12 @@ function myFunction() {
 
 let lastScrollY = window.scrollY;
 window.addEventListener("scroll", () => {
-    console.log("Current Scroll Position:", window.scrollY);
-    console.log("Last Scroll Position:", lastScrollY);
+    // console.log("Current Scroll Position:", window.scrollY);
+    // console.log("Last Scroll Position:", lastScrollY);
     if (window.scrollY > lastScrollY) {
         x.className = "nav";
     }
     lastScrollY = window.scrollY;
-});
-
-window.addEventListener("scroll", () => {
-    console.log("Scroll Y Position:", window.scrollY);
 });
 
 const trigger = document.getElementById('trigger');
@@ -46,5 +41,15 @@ closePopup.addEventListener('click', () => {
 //     if (!popup.contains(event.target) && event.target !== trigger) {
 //         popup.style.display = 'none';
 //         popupFrame.src = ''; // Clear the iframe content
+//     }
+// });
+
+// const searchContainer = document.getElementById("search-container");
+// const searchIcon = document.getElementById("search-icon");
+// searchIcon.addEventListener("click", function () {
+//     if (searchContainer.classList.contains("active")) {
+//         searchContainer.classList.remove("active");
+//     } else {
+//         searchContainer.classList.add("active");
 //     }
 // });

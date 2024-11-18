@@ -8,22 +8,24 @@
 html,
 body {
     width: 100%;
-    height: 100%;
     background-color: #FFFFFF;
     overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
 
 /* header CSS */
-.navbar {
+/* .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #FFFFFF;
     padding: 1em;
-    overflow: hidden;
-    /* position: sticky; */
-    top: 0;
+    overflow: hidden; */
+/* position: sticky; */
+/* top: 0;
     width: 100vw;
     height: 3.5em;
     z-index: 1000;
@@ -154,10 +156,10 @@ div>.icons {
         color: black;
         text-decoration: none;
     }
-}
+} */
 
 /* shop CSS */
-.shop {
+/* .shop {
     height: 22em;
     background: url(ImageShopPage/Rectangle\ 1.png) no-repeat center center/cover;
     display: flex;
@@ -172,7 +174,7 @@ div>.icons {
 .interior_shop h1 {
     font-size: 3.75em;
     text-align: center;
-}
+} */
 
 /* main CSS */
 main {
@@ -258,7 +260,7 @@ main {
 }
 
 /* footer CSS */
-footer {
+/* footer {
     margin-top: 3.125em;
     border-top: 1px solid #D8D8D8;
     display: flex;
@@ -267,9 +269,9 @@ footer {
     padding: 1em;
 }
 
-.about {
-    /* padding: 2.5em; */
-    width: 28%;
+.about { */
+/* padding: 2.5em; */
+/* width: 28%;
     display: flex;
     flex-direction: column;
     row-gap: 0.625em;
@@ -284,18 +286,18 @@ footer {
     width: 3.75em;
 }
 
-.about p {
-    /* width: 70%; */
-    color: #616161;
+.about p { */
+/* width: 70%; */
+/* color: #616161;
 }
 
 .location {
     width: 80%;
     display: flex;
     align-items: center;
-    gap: 0.625em;
-    /* text-wrap: nowrap; */
-}
+    gap: 0.625em; */
+/* text-wrap: nowrap; */
+/* }
 
 .location img {
     width: 1.875em;
@@ -374,12 +376,12 @@ footer {
     height: 1.6em;
 }
 
-@media screen and (max-width: 1150px) {
-    /* .about {
+@media screen and (max-width: 1150px) { */
+/* .about {
         padding: 0.5em;
     } */
 
-    .m-right {
+/* .m-right {
         margin-left: 0;
     }
 }
@@ -436,9 +438,9 @@ footer {
         flex-direction: row;
         width: 100%;
         justify-content: space-between;
-        align-items: center;
-        /* border-top: 1px solid #D8D8D8; */
-    }
+        align-items: center; */
+/* border-top: 1px solid #D8D8D8; */
+/* }
 
     .m-right {
         display: flex;
@@ -500,9 +502,9 @@ footer {
 
 @media screen and (max-width: 450px) {
     .navbar {
-        padding: 0.625em;
-        /* scale: 0.9; */
-    }
+        padding: 0.625em; */
+/* scale: 0.9; */
+/* }
 
     .icons img {
         padding: 0 0.5em;
@@ -513,4 +515,4 @@ footer {
     .menu a {
         font-size: 0.8em;
     }
-}
+} */
