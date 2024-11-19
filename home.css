@@ -26,7 +26,6 @@ a {
 .hero {
     display: flex;
     align-items: center;
-    margin: 83px 0;
     background: #f7f7f7;
 }
 
@@ -114,13 +113,19 @@ a {
 .category-grid {
     display: flex;
     justify-content: space-around;
+    overflow-x: scroll;
     margin-top: 20px;
+}
+
+.category-grid::-webkit-scrollbar {
+    display: none;
 }
 
 .category-item {
     background-color: #FFFFFF;
     padding: 20px;
     border-radius: 10px;
+    flex-shrink: 0;
 }
 
 /* .new-arrival .arrow-btn {
@@ -141,7 +146,7 @@ a {
 
 /* New Arrival Section */
 .new-arrival {
-    padding: 50px;
+    padding: 25px;
     background-color: #FFFFFF;
     text-align: center;
 }
@@ -155,9 +160,12 @@ a {
 .product-grid {
     display: flex;
     justify-content: space-around;
-
+    overflow-x: scroll;
     margin-top: 28px;
+}
 
+.product-grid::-webkit-scrollbar {
+    display: none;
 }
 
 .new-arrival .product-grid {
@@ -256,6 +264,10 @@ a {
     font-size: 36px;
     color: #333333;
     font-weight: bolder;
+}
+
+.product-item {
+    flex-shrink: 0;
 }
 
 .top-rated .product-item img {
@@ -390,7 +402,7 @@ a {
 
     .product-grid,
     .category-grid {
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: center;
     }
 
@@ -415,7 +427,7 @@ a {
         height: auto;
         /* flex-wrap: wrap; */
     /* }  */
-/* 
+    /* 
     .logo img {
         width: 40px;
         height: 40px;
@@ -475,7 +487,6 @@ a {
         height: 80vh;
         object-fit: cover;
         width: 100%;
-        margin-top: -16px;
     }
 
     .hero-text {
@@ -526,7 +537,7 @@ a {
     }
 
     .category-grid {
-        flex-direction: column;
+        /* flex-direction: column; */
         gap: 20px;
     }
 
@@ -538,13 +549,12 @@ a {
     /* New Arrival Mobile */
     .new-arrival .product-grid {
         flex-direction: row;
-        width: 100%;
-        scale: 1;
+        scale: 1.5;
         height: auto;
         padding: 15px;
-        overflow-x: auto;
-        gap: 20px;
-        margin-top: 30px;
+        overflow-x: scroll;
+        gap: 40px;
+        margin-top: 140px;
     }
 
     .item {
@@ -559,10 +569,10 @@ a {
     /* Top Rated Mobile */
     .top-rated {
         padding: 30px 15px;
+        margin-top: 100px;
     }
 
     .top-rated .product-grid {
-        flex-direction: column;
         gap: 12px;
     }
 
@@ -584,7 +594,6 @@ a {
 
     .grid .grid-items img {
         width: 100%;
-        max-width: 300px;
     }
 
 }
