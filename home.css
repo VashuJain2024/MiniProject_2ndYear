@@ -491,7 +491,7 @@ a {
 
     .hero-text {
         position: absolute;
-        bottom: -100px;
+        bottom: -10px;
         right: 10px;
         width: 70%;
         /* height: 26%; */
