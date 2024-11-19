@@ -171,13 +171,11 @@ a {
 .new-arrival .product-grid {
     display: flex;
     margin-top: 28px;
-    width: 70%;
     margin: auto;
     overflow: scroll;
     height: 520px;
     column-gap: 50px;
-    scale: 1.3;
-    margin-top: 110px;
+    scale: 1.3; 
 }
 
 .new-arrival .product-grid::-webkit-scrollbar {
@@ -549,7 +547,7 @@ a {
     /* New Arrival Mobile */
     .new-arrival .product-grid {
         flex-direction: row;
-        scale: 1.5;
+        scale: 1;
         height: auto;
         padding: 15px;
         overflow-x: scroll;
