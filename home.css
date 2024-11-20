@@ -37,7 +37,7 @@ a {
     position: relative;
 }
 
-.hero-content img {
+.hero-content>img {
     width: 100%;
     filter: brightness(0.5);
 }
@@ -912,14 +912,6 @@ a {
 
 .cube-container img {
     position: absolute;
-    /* top: 0px; */
-    filter: none;
-}
-
-model-viewer {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    max-width: 600px;
-    max-height: 400px;
+    top: 7%;
+    width: 90%;
 }
