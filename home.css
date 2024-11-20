@@ -910,11 +910,11 @@ a {
     }
 }
 
-/* .cube-container img {
+.cube-container img {
     position: absolute;
-    top: 0px;
-    width: 90%;
-} */
+    /* top: 0px; */
+    filter: none;
+}
 
 model-viewer {
     position: absolute;
