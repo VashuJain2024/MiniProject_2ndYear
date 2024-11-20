@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - REALIFY</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css" rel="stylesheet" />
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <link rel="stylesheet" href="shop.css">
     <link rel="stylesheet" href="home.css" />
 </head>
@@ -45,8 +46,8 @@
 
     <section class="hero">
         <div class="hero-content">
-            <img src="ImageHomePage/img1.png" alt="Phone AR View" />
-            <div class="animated-text">
+            <img src="ImageHomePage/still-aaa0baa71f102d6c2f3a55e1f20afe9d.png" alt="Phone AR View" />
+            <!-- <div class="animated-text">
                 <span>VIRTUAL</span>
                 <span>-</span>
                 <span>TRY</span>
@@ -56,7 +57,7 @@
                 <span>YOU</span>
                 <span>-</span>
                 <span>BUY</span>
-            </div>
+            </div> -->
             <div class="hero-text">
                 <div class="hero-text-items">
                     <h5>New Arrival</h5>
@@ -68,7 +69,20 @@
                     <button type="submit"><a href="#">BUY NOW</a></button>
                 </div>
             </div>
-            <div class="circle"></div>
+            <!-- <div class="circle"></div> -->
+            <div class="cube-container">
+                <!-- <img src="ImageHomePage/living-room.png" alt=""> -->
+                <model-viewer src="wooden_sofa.glb" alt="A 3D model of furniture" auto-rotate
+                    environment-image="neutral"></model-viewer>
+                <div class="cube">
+                    <div class="cube-face"></div>
+                    <div class="cube-face"></div>
+                    <div class="cube-face"></div>
+                    <div class="cube-face"></div>
+                    <div class="cube-face"></div>
+                    <div class="cube-face"></div>
+                </div>
+            </div>
         </div>
     </section>
 
