@@ -416,10 +416,11 @@ footer {
 .about_logo {
     display: flex;
     align-items: center;
+    gap: 5px;
 }
 
 .about_logo img {
-    width: 3.75em;
+    width: 2.75em;
 }
 
 .about p {
