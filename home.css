@@ -100,7 +100,7 @@ a {
 .categories {
     padding: 50px;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .categories h2 {
@@ -118,7 +118,7 @@ a {
     display: flex;
     justify-content: space-around;
     overflow-x: scroll;
-    margin-top: 20px;
+    margin-top: 7px;
 }
 
 .category-grid::-webkit-scrollbar {
@@ -158,7 +158,7 @@ a {
 
 .new-arrival .product-grid {
     display: flex;
-    margin-top: 28px;
+    margin-top: 20px;
     overflow: scroll;
     column-gap: 50px;
 }
