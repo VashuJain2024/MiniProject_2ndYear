@@ -20,7 +20,21 @@ a {
     text-decoration: none;
     color: #333;
 }
-
+/* Navbar Section  */
+.navbar {
+    position: fixed;
+    display: flex
+;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 1em;
+    overflow: hidden;
+    top: 0;
+    width: 100vw;
+    height: 4.2em;
+    z-index: 1000;
+}
 /* Hero Section */
 .hero {
     display: flex;
@@ -34,6 +48,7 @@ a {
     justify-content: center;
     width: 100%;
     position: relative;
+    margin-top: 62px;
 }
 
 .hero-content>img {
