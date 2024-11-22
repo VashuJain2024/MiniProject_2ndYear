@@ -21,27 +21,27 @@ function swapimage() {
 //     window.location.href = "realify://open";
 // }
 
-// function openRealifyApp() {
-//     // URL scheme of the app (replace with your app's custom scheme)
-//     const appURL = "realify://open";
+function openRealifyApp() {
+    // URL scheme of the app (replace with your app's custom scheme)
+    const appURL = "realify://open";
 
-//     // Try to open the app
-//     const timeout = setTimeout(() => {
-//         // If the app doesn't open, ask the user to install it
-//         const userWantsToInstall = confirm("The app is not installed. Would you like to install it?");
-//         if (userWantsToInstall) {
-//             window.location.href = 'https://www.dropbox.com/scl/fi/fo861xctb04q1spyrm9fi/Realify.apk?rlkey=hde6pnlqtreovexndbfdt0ytr&st=r40c9j3b&dl=1';
-//         } else {
-//             alert("Redirecting back to the website.");
-//         }
-//     }, 1500); // Wait 1.5 seconds to detect if the app is not installed
+    // Try to open the app
+    const timeout = setTimeout(() => {
+        // If the app doesn't open, ask the user to install it
+        const userWantsToInstall = confirm("The app is not installed. Would you like to install it?");
+        if (userWantsToInstall) {
+            window.location.href = 'https://www.dropbox.com/scl/fi/fo861xctb04q1spyrm9fi/Realify.apk?rlkey=hde6pnlqtreovexndbfdt0ytr&st=r40c9j3b&dl=1';
+        } else {
+            alert("Redirecting back to the website.");
+        }
+    }, 1500); // Wait 1.5 seconds to detect if the app is not installed
 
-//     // Try to open the app
-//     window.location.href = appURL;
+    // Try to open the app
+    window.location.href = appURL;
 
-//     // Clear timeout if the app opens successfully
-//     window.addEventListener("blur", () => clearTimeout(timeout));
-// }
+    // Clear timeout if the app opens successfully
+    window.addEventListener("blur", () => clearTimeout(timeout));
+}
 
 
 
@@ -74,27 +74,3 @@ function swapimage() {
 //     arViewer.style.display = "block";
 // });
 
-function openRealifyApp() {
-    // URL scheme of the app (replace with your app's custom scheme)
-    const appURL = "realify://open";
-
-    // Try to open the app
-    const timeout = setTimeout(() => {
-        // If the app doesn't open, ask the user to install it
-        const userWantsToInstall = confirm("The app is not installed. Would you like to install it?");
-        if (userWantsToInstall) {
-            // Provide the APK download link
-            window.location.href = 'https://www.dropbox.com/scl/fi/fo861xctb04q1spyrm9fi/Realify.apk?rlkey=hde6pnlqtreovexndbfdt0ytr&st=r40c9j3b&dl=1';
-        } else {
-            alert("Redirecting back to the website.");
-        }
-    }, 1500); // Wait 1.5 seconds to detect if the app is not opened
-
-    // Try to open the app
-    window.location.href = appURL;
-
-    // Clear timeout if the app opens successfully
-    window.addEventListener("blur", () => {
-        clearTimeout(timeout);  // Stop the timeout if the app opened
-    });
-}
