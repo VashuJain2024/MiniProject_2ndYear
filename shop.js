@@ -37,24 +37,6 @@ closePopup.addEventListener('click', () => {
 });
 
 
-const trigge = document.getElementById('trigge');
-const popu = document.getElementById('popu');
-const closePopu = document.getElementById('close-popu');
-const popupFram = document.getElementById('popup-fram');
-const backgroun = document.getElementById('background');
-
-// Open the popup and load the HTML file
-trigge.addEventListener('click', () => {
-    popupFram.src = 'singleProduct.html';
-    popu.style.display = 'flex';
-});
-
-// Close the popup when the close button is clicked
-closePopu.addEventListener('click', () => {
-    popu.style.display = 'none';
-    popupFram.src = '';
-});
-
 // // Close the popup when clicking outside the popup
 // document.addEventListener('click', (event) => {
 //     if (!popup.contains(event.target) && event.target !== trigger) {
