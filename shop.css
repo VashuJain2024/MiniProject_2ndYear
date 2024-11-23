@@ -98,6 +98,7 @@ iframe {
     width: 100vw;
     height: 3.5em;
     z-index: 1000;
+    position: fixed;
 }
 
 .logo {
@@ -165,6 +166,10 @@ div>.icons {
 }
 
 @media screen and (max-width: 1300px) {
+    .navbar {
+        position: static;
+    }
+
     .navbar ul {
         gap: 4em;
     }
